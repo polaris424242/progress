@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en"><head>
+    
+  <style id="claude-scrollbar">@layer claude-scrollbar{*{scrollbar-width:thin}html{scrollbar-color:rgb(128 128 128 / 50%) transparent}}</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What matters — Dhruve Dahiya</title>
+<meta name="description" content="Four things that should not be left to accident: control over death, consciousness, cognition and origin.">
+<style>
+:root {
+  --bg:#0a0f1e;        /* blue-black ground */
+  --fg:#dde3f1;        /* body text */
+  --muted:#8793b2;     /* secondary text, list markers */
+  --rule:#1c2540;      /* hairlines */
+  --accent:#789ef2;    /* section labels */
+  --accent-2:#9ed2ea;  /* links */
+}
+
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 3rem 1.25rem 6rem;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.65 Georgia, "Iowan Old Style", "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Mono labels against serif prose. That contrast is the whole design. */
+h1 {
+  font: 500 1.05rem/1.3 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 .5rem;
+}
+h2 {
+  font: 500 .78rem/1.4 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--accent);
+  margin: 3rem 0 .9rem; padding-top: 1.2rem;
+  border-top: 1px solid var(--rule);
+}
+h3 {
+  font: 500 .74rem/1.4 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--accent-2); margin: 2rem 0 .5rem;
+}
+p { margin: 0 0 1.05rem; }
+a { color: var(--accent-2); text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+a:hover { color: var(--accent); }
+ul, ol { margin: 0 0 1.05rem; padding-left: 1.3rem; }
+li { margin-bottom: .6rem; }
+li::marker { color: var(--muted); }
+strong { color: var(--fg); }
+em { color: var(--fg); }
+
+.sub { color: var(--muted); margin-bottom: 2.25rem; font-size: .96rem; }
+.note { color: var(--muted); font-size: .93rem; }
+blockquote {
+  margin: 0 0 1.05rem; padding-left: 1.1rem;
+  border-left: 2px solid var(--accent); color: var(--muted); font-style: italic;
+}
+footer {
+  margin-top: 4rem; padding-top: 1.2rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted); font-size: .88rem;
+}
+nav { margin-bottom: 3rem; font-size: .8rem; font-family: ui-monospace, Menlo, monospace; letter-spacing: .04em; }
+nav a { margin-right: 1rem; display: inline-block; text-decoration: none; color: var(--muted); }
+nav a:hover { color: var(--accent); }
+
+/* EDIT-CHROME-START */
+#bar {
+  position: sticky; top: 0; z-index: 10;
+  margin: -3rem -1.25rem 2rem; padding: .65rem 1.25rem;
+  background: var(--bg); border-bottom: 1px solid var(--rule);
+  font: .74rem ui-monospace, Menlo, monospace; letter-spacing: .06em;
+  display: flex; gap: .7rem; align-items: center; flex-wrap: wrap;
+}
+#bar button {
+  background: none; border: 1px solid var(--rule); border-radius: 2px;
+  padding: .3rem .6rem; cursor: pointer; font: inherit; color: var(--muted);
+}
+#bar button:hover { color: var(--fg); border-color: var(--muted); }
+#bar button[aria-pressed="true"] { color: var(--bg); background: var(--accent); border-color: var(--accent); }
+#bar .grow { margin-left: auto; }
+#status { color: var(--muted); }
+#status.ok { color: var(--accent-2); }
+#status.warn { color: #e0a060; }
+#restored {
+  margin: 0 -1.25rem 2rem; padding: .7rem 1.25rem;
+  border-bottom: 1px solid var(--rule); background: rgba(120,158,242,.08);
+  font: .74rem ui-monospace, Menlo, monospace; color: var(--fg);
+  display: flex; gap: .7rem; align-items: center; flex-wrap: wrap;
+}
+#restored[hidden] { display: none; }
+#restored.stale { background: rgba(224,160,96,.1); }
+#restored button {
+  background: none; border: 1px solid var(--rule); border-radius: 2px;
+  padding: .25rem .55rem; cursor: pointer; font: inherit; color: var(--muted);
+}
+#restored button:hover { color: var(--fg); border-color: var(--muted); }
+[contenteditable="true"] { outline: none; }
+[contenteditable="true"]:hover { background: rgba(120,158,242,.06); }
+[contenteditable="true"]:focus { background: rgba(120,158,242,.11); }
+/* EDIT-CHROME-END */
+</style>
+<style>.__cwhr-sel{outline:1px solid hsl(40 70% 40%) !important;outline-offset:0;}html[data-cwhr-mode]:not(#__cwhr_),html[data-cwhr-mode] :not(#__cwhr_){cursor:url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'24'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%3E%3Cpath%20d%3D'M12%20.5h0A11.5%2011.5%200%200%201%2023.5%2012v0A11.5%2011.5%200%200%201%2012%2023.5H2.5a2%202%200%200%201-2-2V12A11.5%2011.5%200%200%201%2012%20.5Z'%20fill%3D'%23fff'%20stroke%3D'rgba(0%2C0%2C0%2C0.22)'%20stroke-width%3D'1'%2F%3E%3C%2Fsvg%3E") 1 23, url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACjklEQVR4AbRWS2gaURR9TGpiFTUEWpKQkA+EruqizWcRSBRT/G8KKpXiyo0ra1fVNiDFLmypFUo3iht/iO4Uay1FGwtFECl1p6KWLly4CGqrSMTY+wRFQ7WhGYd7Zu697845b+7M8B6BJh+UxcXFG3a7XeTxeHQAC+C12+1+ZLPZhHgMbp8FjLWxAkaj8U48Hg8lEomfIpEoLBaLLTKZTAd4LJFI3kD8HsZ+xGKxoMFgYI9T+JvAtUAg8FylUn3hcDj8ra0t6vLyMmKxWIhCofSAfZyDMRqXy+Wr1eqvPp/vKYjMAEZsRMDpdN6MRCKf+Xz+8cbGBm2kckIAtXShUGgKh8Mnfr9/Ybh0IKDT6a4vLS19EggE+wwGY7jmUj6TyUTQyv35+fmP0MbBexkISKVS+97e3u1LsU0oAo67Go3G1i/pCZjN5t3Nzc0H/zPzPlH/ip8EWvbQYrHs4hwWmN3e3n62traGfZy7MtbX12fYbPYTIKIQOzs7C6urq/cgINVWVlaO4EtjEXq9nken06mksgMZtJthtVp5xNzcHBsEIEWu0Wg0RKVS2USz2WTigFx6hPCkMTfRarXgB6WQzd/j63Q6bdK+nB7j0KnRaCCCIMpTE4D2oEql8m1qAvV6/VSr1U5PIJvN+qFjv6fyBIVC4ZfD4XgJAmekC9RqNZROp1+FQqESCCDSBWCVO1EoFC8wOQZpAnjm0Wj0O/xX94H4HNAzotvtNnreFU6lUgllMplAMpnclcvlp8NURC6Xi8BLGc5N9NvtNqpWq6hcLqN8Pn8OLUkAMe/g4EAOG4WzizcTJpPpA6zFIpfL9Ra2I45/IRgM2lKp1LtisXjs9XpvHR4eHimVythF4n78BwAA//8r8OPFAAAABklEQVQDAPCY8Oae0TJxAAAAAElFTkSuQmCC") 1 23, default !important;}html[data-cwhr-mode][data-cwhr-composing]:not(#__cwhr_),html[data-cwhr-mode][data-cwhr-composing] :not(#__cwhr_){cursor:default !important;}</style></head>
+<body id="artifacts-component-root-html">
+
+
+
+
+
+
+
+
+
+
+<header>
+  <h1>What matters</h1>
+  <p class="sub">Dhruve Dahiya. A working list of what I am following and why.</p>
+</header>
+
+<p>Hello there. This is a brief documentation of ideas that I consider valuable or that have repeatedly attracted my attention. I have written more about my motivations on my blog, and I currently lack the knowledge and skillset to claim expertise in any of these domains, but it is a declaration to reduce uncertainty and signal my intention to pursue them more single-mindedly going forward; end my rumination loops and stagnation, discover where these threads of inspiration lead me. Mechanisms governing value-based decision-making, conscious attention and creation of meaningful sense-making narratives are themselves included in one of the categories. The categorization is arbitrary and intuitive; the point is to explore the possibility and implications of rational control over the major determinants of well-being and flourishing conventionally left to accident and chance. I mention some associated projects, problems, topics, books, papers, labs, and researchers&nbsp;whose works have reassured me that this is where my interest lies, and who continue to inspire me (often unbeknownst to them) to build a coherent foundation from which to act, and that for better or worse nudges me into increasingly restless states of inner turmoil the longer I fail to overcome my inaction and seriously pursue them. Read it for fun, and please feel free to share anything that comes to your mind!</p>
+
+<p><br></p>
+
+<nav>
+  <a href="#death">Death</a>
+  <a href="#consciousness">Consciousness</a>
+  <a href="#cognition">Cognition</a>
+  <a href="#origin">Origin</a>
+  <a href="#programmes">Programmes</a>
+  <a href="#law">Law</a>
+  <a href="#shelf">Shelf</a>
+</nav>
+
+<h2 id="death">Control over death</h2>
+
+<p>Medical assistance in dying is lawful now in Canada, the Netherlands, Belgium, Spain, Switzerland, Australia and a growing list of US states, each with a different theory of who qualifies and how that is established. <a href="https://exitinternational.net">Philip Nitschke</a> is the most outspoken and innovative proponent of end-of-life autonomy or the right to die for everyone determined to be in a rational state of mind (which is a separate issue of it's own- how much can you claim to know one better then them; to what extent do you have the right to restrict their actions?), holding that a rational adult's decision should not require a doctor's permission at all.&nbsp;</p>
+
+<p>The position I am currently arguing for is narrower. Not whether the Right exists. but what conditions are necessary to justify allowing, restricting or assisting with suffering-alleviation, where suffering can be shown to exist: what counts as capacity, what counts as sufficient information, how much waiting is enough, and what safeguards exist against authorities with the power to judge.&nbsp;</p>
+
+<blockquote>An unbiased screening framework would determine Rationality without importing moral conventions from outdated or unscrutinized religious intuitions. I would accept some false positives if they are unavoidably traded against false negatives, because preventing suffering weighs more.</blockquote>
+
+<p>That's from one of my scattered notes, whose organization is part of the purpose of this webpage. Errors in the two directions are not symmetrical and are not equally recoverable. Absence is neutral, but existence of a suffering entity is bad, undesirable, wrong, and while I acknowledge that happiness, fulfilment or pleasure of a being is, of course, good, desirable, preventing the former should take higher priority (more resources and efforts) than ensuring the existence of a being capable of the latter states. That's my current belief and I'm open to changing it in light of convincing arguments or relevant scientific evidence.</p>
+
+<h2 id="consciousness">Control over consciousness</h2>
+
+<p><a href="https://www.hedweb.com">David Pearce's</a> <em>Hedonistic Imperative</em> claims that suffering is a feature of how nervous systems happen to be built, and that biotechnology therefore makes its abolition an obligation rather than a fantasy. To get a common objection out of the way- if mindless "optimization" unintentionally results in greater suffering instead, than that is undesirable and hence not "optimal". So super-happiness should not be taken as simplistic hedonism-maxxing. He wants the gradient kept, so motivation survives, and the whole curve lifted. That includes non-human animals, who suffer by accident of evolution and cannot consent to it.</p>
+
+<p><br></p>
+
+<ul>
+  <li><a href="https://farout.bio/">The Far Out Initiative</a> pursues "valence engineering", ending chronic suffering by modulating the circuits that maintain it. Preclinical. <a href="https://www.astralcodexten.com/p/profile-the-far-out-initiative">ACX post</a>.</li>
+  <li><a href="https://www.sputnikbrain.com">Sputnik Brain</a>, Stealth Startup building a non-surgical neural interface with the stated aim to unshackle civilization from neurobiological suffering. This kind of stimulation I first encountered in the book 'The Pleasure Implant', whose controversial protagonist you will meet right after the next entry.&nbsp;</li>
+  <li><a href="https://qualiacomputing.com/">Qualia Computing</a>, Andrés Gómez Emilsson and Qualia Research Institute: mapping the state-space of consciousness, valence structuralism, consciousness engineering as a research program to pin down the computational properties of qualia; a mathematical phenomenology.&nbsp;</li>
+  <li>Robert Heath, <em>Exploring the Mind-Brain Relationship</em>. Deep-brain stimulation of pleasure in human patients, decades before anyone had the ethics for it. A bit of a cautionary tale too, for scientific experimentation unethical by modern moral standards, not unlike some of the other figures mentioned later in this document, such as Julian Huxley. We don't have to let some parts taint the whole; we can extract the good, leaving the bad ones.&nbsp;</li>
+  <li><a href="https://www.astralcodexten.com/p/absurd-adventure-and-amygdalectomy">Absurd Adventure and Amygdalectomy</a>, read alongside Arciniegas, Anderson &amp; Filley's <em>Behavioral Neurology &amp; Neuropsychiatry</em>. These experiments-by-accident are the only direct evidence we have about which networks, circuits or pathways are implicated in a unified or fractured sense of Self. (See computational psychiatry). It also raises the prospect for new surgical interventions for psychiatric disorders alongside tech and chemical means.&nbsp;</li>
+  <li><a href="https://johnvervaeke.com">John Vervaeke</a> on relevance realization and the meaning crisis, and Jordan Peterson's <em>Maps of Meaning</em>. Read for the account of how a mind organizes itself around what matters. What matters in the sense of what drives you, what motivates you, attracts you, appeals to you, reflects accurately your core value structure, things you closely associate with your self-identity, that ought to guide your decisions and actions through affect or emotions.&nbsp;</li>
+  <li><a href="https://danfaggella.com/worthy/">A Worthy Successor</a>, Daniel Faggella. A cool set of podcast interviews.&nbsp;</li>
+</ul>
+
+<p class="note"><strong>On the Far Out approach.</strong>&nbsp;One strong objection I came across is that it rests on candidate-gene reasoning. A candidate gene study picks one gene in advance, on a story about what it ought to do, and tests whether a variant in it tracks a trait in a modest sample. For behaviour and psychiatry, almost the entire literature built that way collapsed once genome-wide studies arrived. These traits are polygenic: thousands of variants, each contributing almost nothing. Reasoning from one extraordinary individual's single mutation to a general intervention is the move with the worst track record in the field.</p>
+
+<h2 id="cognition">Control over cognition</h2>
+
+<p>This one I find the most enjoyable, personally. Also the most tricky, because apparently it frequently devolves into scientific racism and other biases that prevent a sincere inquiry into Human Intelligence, the mental capacity necessary for all the feats of pattern recognition, problem solving and general competence at comprehending and navigating our increasingly complex society. The one whose deficit or erosion due to biological or environmental factors seems to have the most direct effects on individual flourishing. An under-appreciated, underestimated existential risk. Dr. Richard Haier's position is that intelligence is a biological variable with real brain correlates, that the evidence is much stronger than the public conversation admits, and that refusing to study it has made nobody better off. P-FIT, with Rex Jung, located general ability in the efficiency of a parieto-frontal network rather than in any single region. His site is <a href="https://www.richardhaier.com/">richardhaier.com</a>. He is part of the <a href="https://www.hirefoundation.org/">HIRE Foundation</a>. He has an interesting book titled the 'Neuroscience of Intelligence' on this topic, and appearances on various podcasts. He also believes that the purpose of every intelligence researcher should be to figure out methods to enhance cognition.&nbsp;</p>
+
+<p><a href="https://emilywilloughby.com">Emily Willoughby</a>, at Minnesota and part of the same foundation, wrote <em>Tracing causes and consequences of human intelligence through genetic and cognitive data</em> under James Lee and Matt McGue. The standard advice in this field is also the most useful I have come across as assurance and validation of this part of my personal curriculum. The prerequisites to understand the frontiers and stand any chance to make any significant contributions: build the foundation in the unglamorous parts first: statistics, psychometrics, research design, genetics, cognitive psychology, programming. Research is less about having interesting ideas than about learning to ask questions that can be tested, analyzing data carefully, and writing up what the evidence does and doesn't show. Until now I've only made some slow progress on Michael Furr's Psychometrics book, Statistics for the Behavioral Sciences, OpenIntro Statistics and skimming some other basic cognitive psychology and statistics books, but I expect a favourable change in the near future in my circumstances and conditions to allow me to start making progress at an acceptable- if not satisfactory- rate quite soon.&nbsp;</p>
+
+<h3>Paul Glimcher</h3>
+
+<p>Rationality- how to be rational and what it even means to be rational, or the frameworks against which we judge rationality, especially when studied as a part of the broader discipline of behavioural economics and neuroeconomics, is the only competitor to human intelligence research in terms of felt-enjoyment. Intelligence itself is insufficient unless it serves some value or goal. Everything is a decision. Everything you say, do, think, whether or not it is conscious. Just like everything can be said to be an action, including inaction. (But doesn't that render it meaningless? If it only gains it's significance from the existence it's converse, by virtue of the exclusion of it's opposite, just like nothing is True if everything is? Just like the good is defined in opposition to the bad? And one cannot mean anything without referring to the other; they depend upon each other.) Decisions become actions, and actions are the only honest readout of what a person values and who they are. So the substrate of deciding interests me most: the networks, pathways and computations that represent risk, cost and reward, and that can be made to predict a choice before it happens.</p>
+
+<p>Dr. Glimcher built the field that treats choice as a computation you can find in biology: subjective value in a common currency, compared by accumulating evidence until a bound is crossed. It is the neatest thing I have found to a multidisciplinary synthesis that relates the economic, psychological and neurophysiological with rigorous precision and a rationale for a joint unified theory. I recently experienced the same feeling again while reading 'Trialectic: a Confluence of Law, Neuroscience and Morality' by Dr. Peter Alces which is about Neuroscience, Law and Philosophy, but I'm getting ahead of myself here. It is also the frame I used to rewrite my proposal on social aggression in mice building on Dr. Takahashi's research. The question <em>why does the animal attack</em>&nbsp;led to asking&nbsp;<em>which term in the decision variable is it tracking</em>, which has a model comparison attached and therefore is a more precise approach.</p>
+
+<p>Economics is the optimal allocation of scarce resources. The scarcest resource any of us has is time, and the gate on time is attention. We become what we attend to, and what reliably draws us is what we actually value, whatever we say. Constraints like wealth and cognitive ability do not only make goals harder to reach, they make it harder to know what the goals are. If value structure, personality and cognitive profile can be inferred psychometrically, and correlated with brain measures and genetics, then you can say something useful about what is likely to help a particular person flourish and who they would do well to find. The whole thing can merge into a larger theory connecting disjoint papers I've read on [ Neural , Cognitive , Behavioral ] x [ Law , Economics ]. Another nice paper on this topic is 'The Neuroeconomic Path of The Law' by Hoffman.&nbsp;</p>
+
+<p>The uncomfortable version: society is getting more complex. If that continues, people at the lower end of the cognitive distribution will find it harder to function and to earn, while people at the top compound their advantage. That is the distributive-justice problem in its sharpest form. <a href="https://jonathan-anomaly.com/wp-content/uploads/2024/11/Creating-Future-People.pdf">Jonathan Anomaly's <em>Creating Future People</em></a> pushes hard the other way, arguing that inequality worries should not veto enhancement. I do not think he is right, but his is the argument that has to be answered rather than dismissed.</p>
+
+<ul>
+  <li>Heiner Rindermann, <em>Cognitive Capitalism</em>. The claim I find hardest to dismiss is that we may already be selecting against cognitive ability, or building systems that quietly degrade it. Selecting <em>for</em> it is not obviously justified, since the trade-off risks against health and personality are real and largely unmeasured. But something being actively selected against is closer to a preventable illness than to an enhancement. AI does not make this less urgent, as some people seem to claim now, unless we have decided to surrender to the artificial with no hope of comprehension at all, at least for the foreseeable future. As Intelligence becomes cheaper to rent, the human capacity to judge what is worth renting becomes more valuable too.&nbsp;</li>
+  <li>Daniel Markovits on the meritocracy trap, the counterweight I read Rindermann against. Speaking of Rindermann, I read that his is a relatively less supported and possibly biased view, though as I said in the preface, I lack the tools to independently evaluate every claim myself, but- without boring you with the whole reading-list, I intend to read Hanushek and Woessmann's 'The Knowledge Capital of Nations' too (and start using a term less suggestive of 'Capitalism', to reduce it's chances of being misinterpreted as something whose primary purpose is to serve capitalism and economic growth rather than reduce suffering and promote human flourishing).&nbsp;</li>
+  <li>E. O. Wilson, <em>Sociobiology</em>. The book that made it respectable, then unrespectable, then respectable again to ask whether behaviour has a biology. I heard some people praising him as a genius, and some calling him controversial for spreading theories used for malicious justification.</li>
+  <li>Population, overshoot and quality of life. The UN's ecological-overshoot warnings make this seem more urgent. I only have questions and no answers. How is the population level related to quality-of-life, if at all? Does there exist a point beyond which the quality of life starts declining? If so, how does that inform concerns about population decline? Considering that the decline might not be uniform across demographics. Should an ideal society be structured in a way to restrict the growth of population beyond that level?&nbsp;</li>
+</ul>
+
+<h2 id="origin">Control over origin</h2>
+
+<p><a href="https://mynucleus.com/evolution">Nucleus Embryo</a>, Kian Sadeghi's product and manifesto, takes the embryos from one IVF cycle and ranks them across hundreds of traits: disease risk, height, and contentiously cognitive ability. The manifesto argues the choice is already being made by default, and that making it legible is the honest option. Against it, from inside the same movement, is <a href="https://www.lesswrong.com/posts/DfrSZaf3JC8vJdbZL/how-to-make-superbabies">Chase Denecke's (Gene Smith's) <em>How to Make Superbabies</em></a>, which argues that selection across a single cycle buys very little and that editing is where the real effect sizes are.</p>
+
+<p>Chase, who I know through HeraSight, disagrees with Sadeghi's methods. I find the vision compelling and I do not have the technical expertise to referee the dispute, not on the statistics of polygenic prediction between siblings, nor on what editing can actually deliver. I am listing both because pretending to a verdict I have not earned would be worse than admitting the gap. I have written to Kian for his own answer to the objection rather than taking it secondhand.</p>
+
+<h3>On the word, before anyone else uses it</h3>
+
+<p>Galton, Kellicott and Muller are on this page. I went into their books— Kellicott’s <em>The Social Direction of Evolution</em>, and Galton’s <em>Inquiries into Human Faculty</em> and <em>Hereditary Genius</em>— to see their perspective for myself rather than secondhand. The arguments have a history and I would rather read it and form my opinion than adopt the popular view and unintentionally risks following an idea that reduces autonomy and inflicts suffering rather than improves well-being (or overlooks, ignores or dismisses the right path forward due to ignorance, convenience or convention). Reading and mentioning them is not endorsing what was done in their name, and I have done my best to explicitly and truthfully state my thoughts and intentions here, but would still like you to assume best intentions by default and ask questions when uncertain, rather than assume malicious intent and deprive me of the opportunity to become aware of any false beliefs and correct them sooner.&nbsp;</p>
+
+<p><strong>I denounce the coercive tradition </strong>of compulsory sterilization. Race science. Institutionalization. The state, or anyone else, deciding who may reproduce. That history was an atrocity, not a good idea badly executed and not a technical failure. It was wrong at the root, because it treated people as means and took the choice out of their hands. Every sentient life is valuable for it's own sake, and deserves unconditional acceptance and love, and this fits well with my utilitarian leanings too, which I describe elsewhere. Anyone who wants to revive it will find no ally here. For more on why it was not just a failed execution of a good idea, Michael Sandel’s The Case Against Perfection and Habermas’s The Future of Human Nature have been recommended as insightful starting points.&nbsp;</p>
+
+<p><strong>What I am interested in</strong> is expanding reproductive autonomy: access, information, and the real availability of choice, and the claim that we owe the people who come after us freedom from preventable disease, disability and disorder where it is in our power. There are parallels and some might consider it a liberal form of eugenics, but I would consider it more cruel and unfair for a parent to forego the opportunity to prevent a disability only likely to result in unnecessary suffering, acknowledging that the line between cure and enhancement is thin, and at one point we would have to debate the balance between absolute autonomy and societal consequences, though generally I still lean in favour of autonomy when distributive justice has been served well.&nbsp;</p>
+
+<ul>
+  <li>Kathryn Paige Harden, <em>The Genetic Lottery</em>. That genetic differences are real and that this is an argument for redistribution rather than against it. The position I most want to be able to defend or refute properly. Rawl's Veil of Ignorance, my simultaneous realization about determinism and compassion at a certain stage of my life- not punishing anyone for arbitrary, chance, random accident-of-birth, things that were never under our control. Focusing on early prevention and detection, or rehabilitation, rather than punishment. Holding them accountable when instrumentally necessary. The Original Sin from the same author is a great introduction to neurolaw too, by the way, and fueled my interest in criminal justice and forensic psychiatry.&nbsp;</li>
+  <li>H. J. Muller, <em>Out of the Night</em> (1935). A Nobel geneticist's case for voluntary germinal choice, written explicitly against the coercive programs of his day.</li>
+  <li>Julian Huxley, <em>New Bottles for New Wine</em> (1957), the essay that coined "transhumanism". Which I haven't read yet. What I have read is <a href="https://www.gutenberg.org/ebooks/65145">his collected essays on Project Gutenberg</a> (read only half until now- I tend to procrastinate when I feel like I ought to be prioritizing something else. Like Masters applications right now. And yet here I am. Anyway).</li>
+</ul>
+
+<h2 id="programmes">What states are funding</h2>
+
+<p><a href="https://brains.link/en">Internet of Brains</a> sits inside Japan's <a href="https://www.jst.go.jp/moonshot/en/program/goal1/">Moonshot Goal 1</a>, which sets a target for 2050: a society in which people are freed from the constraints of body, brain, space and time. Ryota Kanai's project builds cybernetic avatars and the interfaces to drive them, including several people operating one robot and one person operating many. Jun'ichi Ushiba's group at Keio works on non-invasive BMI for mental and physical state estimation. Shinichi Furuya at Sony CSL works on the ceiling effect in skilled movement: why trained pianists and surgeons stop improving. It is the only state-scale programme I know of that treats collective cognition as the engineering object rather than the individual one. I heard it's going slow except two groups, but the vision is still nice to see.</p>
+
+<p><a href="https://aria.org.uk/opportunity-spaces/scalable-neural-interfaces/precision-neurotechnologies">ARIA's Precision Neurotechnologies</a> is £69m across 19 teams under Jacques Carolan, on one thesis: that we cannot treat complex brain disorders until we can interface at the level of circuits rather than regions. A stated thesis, a deadline, and a willingness to fund the version that might fail. Just read the sub-project groups. It is no longer alone in that. There is now a wave of venture capital, independent neolabs and research non-profits built on the same willingness to give up immediate returns for a long shot that would matter.</p>
+
+<ul>
+  <li>DARPA: <a href="https://www.darpa.mil/research/programs/next-generation-nonsurgical-neurotechnology">N3</a> for nonsurgical neural interfaces, <a href="https://www.darpa.mil/research/programs/targeted-neuroplasticity-training">TNT</a> for peripheral nerve stimulation to accelerate learning, and <a href="https://www.darpa.mil/research/programs/strengthening-resilient-emotions">STRENGTHEN</a> for emotional regulation and resilience to traumatic stress. Other secret military cognitive enhancement stuff, because why would they not be? (James Giordano on YT)</li>
+  <li><a href="https://brain-computation.iisc.ac.in/moonshot-project/">IISc Brain Co-Processors</a>, a Pratiksha Trust initiative following Rajesh Rao's neural co-processor work: decode activity, process with AI, write back by stimulation. First target is restoring reach and grasp after MCA stroke.</li>
+  <li>China's interest in biotechnology for military advantage. Elsa Kania's <em>Minds at War</em> is the serious treatment and BGI's data practices are the documented part. An article about a child prodigy profiling gifted genes caught my attention years ago, but apparently he changed the direction of his company later and there's been nothing noteworthy since then. Kind of as disappointing as when I read that Bryan Johnson once left unfinished a cognitive enhancement project by his neurotechnology company Kernel. Anyway. Claims that embryo selection for cognition is already running are unverified and probably false. It is a biosecurity question, a possibility, not a fact: If a nation or culture allocates more resources to preventing cognitive decline and actively enhancing intelligence, and others don't, I don't see how that would be any different from the Nuclear or AI arms race. For a more law and policy perspective, check out Dr. Nita Farahany's 'Battle for your Brain'.&nbsp;</li>
+</ul>
+
+<h2>Replacing the substrate</h2>
+
+<p>Jean Hébert's proposal is that the only durable answer to a brain that is wearing out is to replace it a piece at a time, young tissue grafted in slowly enough that identity is carried across. The technical statement is in <a href="https://www.mdpi.com/2306-5354/10/2/263"><em>Bioengineering</em>, 2023</a>; the readable versions are MIT Technology Review's <a href="https://www.technologyreview.com/2024/08/16/1096808/arpa-h-jean-hebert-wants-to-replace-your-brain/">2024 profile</a> and its <a href="https://www.technologyreview.com/2026/03/30/1134780/r3-bio-brainless-human-clones-full-body-replacement-john-schloendorn-aging-longevity/">2026 piece on R3 Bio</a>. I developed a proposal for engineered anterior cingulate tissue as an <em>in vitro</em> drug-screening platform partly because of this, with input from him and his co-founder. It was set aside after an ethics feasibility review.</p>
+
+<p>Hans Moravec's thought experiment, replacing neurons one at a time with functional equivalents until nothing original remains, is the original inspiration first described in his book 'Mind Children'. If whole-brain emulation turns out not to preserve the person, because scanning and running a copy produces a copy rather than you (how do we know?), then gradual physical replacement is the better bet even though it is far more invasive. Hébert's neocortical replacement is the Ship of Theseus with tissue Vs software. Keeps more possibly-relevant stuff intact. This route has a history with Dr. Sergio Canavero.</p>
+
+<p>The whole question may be moot if ageing is solved upstream. Michael Levin's bioelectric work, mitochondrial repair, Bryan Johnson at one end and Life Biosciences at the other, whose ER-100 partial epigenetic reprogramming cleared FDA IND review in 2026 and is now the first human cellular-reprogramming trial. Clearance to run a trial is not approval of a therapy.&nbsp;</p>
+
+<h3>Cyborg Psychology</h3>
+
+<p>MIT Media Lab's <a href="https://www.media.mit.edu/groups/cyborg-psychology/overview/">Cyborg Psychology group</a>, under Pat Pataranutaporn, aims to invent, investigate and inspire human-AI systems that support human flourishing. Its second research area, cognitive augmentation, aims for interfaces that enhance what a person can do while preserving their autonomy rather than diminishing it or substituting for it. Important if for a future where technology helps humans know themself, develop agency and seek fulfilment in the real world rather than retreat into net-harmful distractions or replacements. Though do you have any objections to plugging into Nozick's experience machine that you'd still have if I were to say that current reality is a simulation?&nbsp;</p>
+
+<p>The project pushed me to build something. Agency Mirror logs a person's momentary mood alongside the choice they actually made, then shows them where intention and behaviour come apart. It is not advice and not a habit tracker: a measurement instrument pointed at one's own agency, on the premise that you cannot change a gap you have never seen plotted. It is early and rough, and was made with the purpose of supplementing my application but I don't think I will be applying so soon after all, so just a hobby project.</p>
+
+<h3>Three layers to intervene on</h3>
+
+<p>Sensory supplies the data; affect and cognition process it. Said that way the three stop being separate fields and become one pipeline with three places to intervene.</p>
+
+<ul>
+  <li><strong>Sensory</strong>: restoration, optimisation, enhancement, extension, interconnection. <a href="https://www.sharpersense.com/science">Sharper Sense</a> is the clearest example, using transcutaneous cervical vagus nerve stimulation to sharpen sensory processing on demand, with the mechanism traced through locus coeruleus activation and thalamic gating.</li>
+  <li><strong>Affect</strong>: modulation and real-time adaptive regulation. The closed-loop version, sensing state and adjusting continuously rather than dosing once, is the part nobody has built properly.</li>
+  <li><strong>Cognition</strong>: augmentation and enhancement. The nearest consumer version is already shipping as <a href="https://www.freethink.com/robots-ai/frame-ai">AI glasses</a> and <a href="https://venturebeat.com/ai/why-context-aware-ai-agents-will-give-us-superpowers-in-2025/">context-aware agents</a>, arriving through the sensory layer with no theory of autonomy behind it.</li>
+</ul>
+
+<ul>
+  <li><a href="https://web.mit.edu/deblina-sarkar/">Deblina Sarkar</a>, Nano-Cybernetic Biotrek: a nonsurgical brain implant via a cell–electronics hybrid for focal neuromodulation.</li>
+  <li>Organoids are already doing drug testing and Alzheimer's work, and <a href="https://www.pennmedicine.org/news/a-meeting-of-the-minds-drives-discovery-in-the-brain">groups at Penn</a> have found a way to integrate new neurons in a large animal. I had been circling the same approach independently: grow the tissue, do the research on it, then implant it.</li>
+  <li><a href="https://phaselock.satpugnet.com/">Phase Lock</a>, Saturnin Pugnet's manifesto for alignment-by-integration: that constraining AI from outside buys a few years, and only linking human intent directly to machines lasts.</li>
+  <li>José M. R. Delgado, <em>Physical Control of the Mind</em> (1969). Worth rereading now: his pleasure-implant work and today's attention economy are the same question about who holds the dial.</li>
+</ul>
+
+<h2 id="law">Cognitive liberty and what any of it would owe us</h2>
+
+<p>If your cognition, your affect and your personality are products of a genetic lottery and an environmental accident, what justifies differential outcomes? What justifies punishment, and how much? What do we owe each other once the capacities are known to be unequally distributed by genes, development, circumstance, or access to enhancement? What are the long-term effects of Big Tech profiting off our attention and collecting our private neural data? How can neuroscience and cognitive science inform the Law and our social institutions?&nbsp;</p>
+
+<p>Two people define this register for me and much more. <a href="https://scholarship.law.umn.edu/faculty_articles/604">Francis X. Shen's <em>Law and Neuroscience 2.0</em></a> is the field's map of its second decade, on all the interesting intersections and work that remains. Peter Alces's <em>Trialectic</em> works the harder philosophical seam underneath it. Nita Farahany's case for cognitive liberty is in tension with everything else: a right to mental privacy and self-determination has to be balanced against the consequences of enhancement and against cognitive capitalism, and the laws are being written right now. The answer is not refusal but education technology that cultivates a mind rather than substituting for one, with emotion regulation and real social connection treated as part of the same curriculum. The loneliness epidemic is not a separate problem.&nbsp;</p>
+
+<ul>
+  <li>Hirstein, Sifferd and Fagan, <em>Responsible Brains</em>; Pardo and Patterson, <em>Philosophical Foundations of Law and Neuroscience</em>; Zamir and Teichman, <em>The Oxford Handbook of Behavioral Economics and the Law</em>; and <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1693450">Paul Zak, "The Neuroeconomic Path of the Law"</a>.</li>
+</ul>
+
+<h2>Being built right now</h2>
+
+<ul>
+  <li><a href="https://www.voyage.inc">Voyage</a>, a "deep tech couture house" building neural interfaces for the inner voice. The stated aim is mental liberty.</li>
+  <li><a href="https://resonance.info">Resonance</a>, Matthew Lieberman's network, matching people on measured compatibility rather than stated interests.</li>
+  <li><a href="https://www.mytemenos.ai">Temenos</a>, a Jungian self-discovery app. The nearest neighbour to Agency Mirror, approached from depth psychology instead of behaviour.</li>
+  <li><a href="https://www.arcarae.com">Arcarae</a>: an app, a Hermetic epigraph, and nothing else disclosed. Listed because the little that is public is clearly deliberate.</li>
+</ul>
+
+<h2 id="shelf">Bookshelf</h2>
+
+<ul>
+  <li>Francis X. Shen, <em>Law and Neuroscience 2.0</em> (2016)</li>
+  <li>Peter A. Alces, <em>Trialectic: The Confluence of Law, Neuroscience and Morality</em> (2023)</li>
+  <li>Nita Farahany, <em>The Battle for Your Brain</em> (2023)</li>
+  <li>Kathryn Paige Harden, <em>The Genetic Lottery</em> (2021)</li>
+  <li>Richard Haier, <em>The Neuroscience of Intelligence</em> (2017)</li>
+  <li>Glimcher and Fehr, eds., <em>Neuroeconomics: Decision Making and the Brain</em> (2013)</li>
+  <li>Arciniegas, Anderson and Filley, eds., <em>Behavioral Neurology &amp; Neuropsychiatry</em></li>
+  <li>Hirstein, Sifferd and Fagan, <em>Responsible Brains</em> (2018)</li>
+  <li>Pardo and Patterson, <em>Philosophical Foundations of Law and Neuroscience</em> (2016)</li>
+  <li>Zamir and Teichman, eds., <em>The Oxford Handbook of Behavioral Economics and the Law</em> (2014)</li>
+  <li>Jonathan Anomaly, <em>Creating Future People</em> (2020)</li>
+  <li>David Pearce, <em>The Hedonistic Imperative</em> (1995)</li>
+  <li>E. O. Wilson, <em>Sociobiology</em> (1975)</li>
+  <li>José M. R. Delgado, <em>Physical Control of the Mind</em> (1969)</li>
+  <li>Julian Huxley, <em>New Bottles for New Wine</em> (1957)</li>
+  <li>B. F. Skinner, <em>Walden Two</em> (1948)</li>
+  <li>H. J. Muller, <em>Out of the Night</em> (1935)</li>
+  <li>Jeremy Bentham, <em>Principles of Morals and Legislation</em> (1789)</li>
+  <li>John Rawls, <em>A Theory of Justice</em> (1971), started and loving it</li>
+  <li>Jordan Peterson, <em>Maps of Meaning</em></li>
+  <li>John Vervaeke, <em>Awakening from the Meaning Crisis</em> (2019)</li>
+  <li>Marvin Minsky, <em>The Society of Mind</em> (1986)</li>
+  <li>José Luis Bermúdez, <em>Cognitive Science: An Introduction to the Science of the Mind</em></li>
+  <li>Rutger Bregman, <em>Moral Ambition</em> (2024)</li>
+  <li>R. Michael Furr, <em>Psychometrics: An Introduction</em></li>
+  <li>Gravetter and Wallnau, <em>Statistics for the Behavioral Sciences</em></li>
+  <li>Diez, Çetinkaya-Rundel and Barr, <em><a href="https://www.openintro.org/book/os/">OpenIntro Statistics</a></em></li>
+  <li>Kirchler and Hoelzl, <em>Economic Psychology: An Introduction</em> (2018)</li>
+  <li>Kandel et al., <em>Principles of Neural Science</em></li>
+</ul>
+
+<h2>Some people whose work I follow</h2>
+
+<p><strong>Intelligence and behaviour genetics.</strong> Richard Haier, Emily Willoughby, James J. Lee, Matt McGue, Kathryn Paige Harden, Heiner Rindermann, Dean Keith Simonton, Chase Denecke (Gene Smith), Kian Sadeghi.</p>
+
+<p><strong>Neurolaw, liberty and justice.</strong> Francis X. Shen, Peter A. Alces, Nita Farahany, Hank Greely, Craig McFarland, Philip Nitschke, Bernard Diamond, John Rawls, Jeremy Bentham, Daniel Markovits.</p>
+
+<p><strong>Interfaces and substrate.</strong> Ryota Kanai, Jacques Carolan, Rajesh Rao, Jean Hébert, Deblina Sarkar, Max Hodak, JeYoung Jung, Pat Pataranutaporn, Hans Moravec, José M. R. Delgado, Robert G. Heath.</p>
+
+<p><strong>Consciousness and meaning.</strong> David Pearce, John Vervaeke, Arthur Brooks, Michael Levin, Marc Brackett, Matthieu Ricard.</p>
+
+<p><strong>Decision and the brain.</strong> Paul Glimcher, Aki Takahashi, Hakwan Lau, Xinying Cai, Bittu Kaveri Rajaraman, Robert Sapolsky.</p>
+
+<p><strong>Building it as companies.</strong> Sam Hosovsky (Neurosoft Bioelectronics), Daniel Burger (Eightsix Science), Charles Rodenkirch (Sharper Sense), Shankar Sri (Sputnik Brain), Matthew Lieberman (Resonance), Khalil Ismail (Voyage), Nicole Hsing (Arcarae).</p>
+
+<footer>
+  <p>Last updated November 2026.<br>
+  <a href="https://apolaris.substack.com">apolaris.substack.com</a> ·
+  <a href="https://github.com/polaris424242">github.com/polaris424242</a></p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
